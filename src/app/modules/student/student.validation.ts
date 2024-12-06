@@ -42,7 +42,7 @@ export const createStudentValidationSchema = z.object({
       presentAddress: z.string(),
       permanentAddress: z.string(),
       guardian: createguardianValidationSchema,
-      localGuardian: createlocalGuardianValidationSchema,
+      localGuardian: createlocalGuardianValidationSchema.optional(),
       admissionSemester: z.string(),
       profileImg: z.string(),
       academicDepartment: z.string(),
