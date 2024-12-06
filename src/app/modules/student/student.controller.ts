@@ -22,7 +22,7 @@ const getAllStudents = async (req: Request, res: Response) => {
 
     res.status(200).json({
       success: true,
-      message: 'Students are retrieved succesfully',
+      message: 'Students is retrieved succesfully',
       data: result,
     });
   } catch (err) {
